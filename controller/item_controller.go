@@ -9,5 +9,6 @@ import (
 
 func ItemController (c *gin.Context) {
 	var items []entity.Item
-	c.JSON(http.StatusOK, common.Db.Find(&items))
+	common.Db.Find(&items)
+	c.JSON(http.StatusOK, &items)
 }
