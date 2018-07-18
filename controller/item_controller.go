@@ -2,9 +2,9 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/tomo0111/gin-performance/entity"
 	"net/http"
-	"github.com/tomo0111/gin-performance/common"
+	"github.com/tomoyane/gin-performance/entity"
+	"github.com/tomoyane/gin-performance/common"
 )
 
 func ItemController (c *gin.Context) {

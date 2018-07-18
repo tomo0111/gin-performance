@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/tomo0111/gin-performance/controller"
-	"github.com/tomo0111/gin-performance/common"
+	"github.com/tomoyane/gin-performance/common"
+	"github.com/tomoyane/gin-performance/controller"
 )
 
 func main() {
