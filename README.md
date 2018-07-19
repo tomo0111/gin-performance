@@ -1,13 +1,50 @@
-# gin performance
-gin performance verification repository.
+# Gin performance
+Gin performance verification repository.
 
-# Setup
-Docker build
+# Docker image
+Docker pull
 ```
-$ docker build -t gin-performance:latest .
+$ docker pull tomohito/gin-performance
 ```
 
-Docker run container
+Set Environment variable.
 ```
-$ docker run -p 8080:8080 gin-performance
+DB_SOURCE={database source}
+```
+
+Docker run.
+```
+$ docker run -p 8080:8080 tomohito/gin-performance
+```
+
+# Build myself
+Git clone.
+```
+$ git clone git@github.com:tomoyane/gin-performance.git
+```
+
+Docker build.
+```
+$ docker build -t {username}/gin-performance:latest .
+```
+
+Set Environment variable.
+```
+DB_HOST={database source}
+```
+
+Docker run.
+```
+$ docker run -p 8080:8080 {username}/gin-performance
+```
+
+# Performance verification sql
+```
+CREATE TABLE items (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(128) NOT NULL,
+  category VARCHAR(128) NOT NULL,
+  created_at DATETIME(6),
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
