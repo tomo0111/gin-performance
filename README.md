@@ -17,7 +17,7 @@ Docker run.
 $ docker run -p 8080:8080 tomohito/gin-performance
 ```
 
-# Build myself
+# Build by myself
 Git clone.
 ```
 $ git clone git@github.com:tomoyane/gin-performance.git
@@ -30,7 +30,7 @@ $ docker build -t {username}/gin-performance:latest .
 
 Set Environment variable.
 ```
-DB_HOST={database source}
+DB_SOURCE={database source}
 ```
 
 Docker run.
